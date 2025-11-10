@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   padding: 0;
@@ -42,7 +42,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 72px;
-
 }
 
 .logo {
@@ -50,6 +49,10 @@ nav {
   height: 2.5rem;
   position: relative;
   z-index: 10;
+  width: 100px;
+  font-size: 50px;
+  color: red;
+  font-weight: bold;
 }
 
 nav select,
@@ -117,7 +120,6 @@ option {
   text-align: center;
   padding: 30ppx;
   flex-wrap: wrap;
-
 }
 
 h1 {
@@ -130,7 +132,7 @@ h1 {
   padding: 0 15px;
 }
 
-.text>span {
+.text > span {
   font-size: 1.25rem;
   font-weight: 500;
 }
@@ -148,7 +150,7 @@ h1 {
   padding: 0 20px;
 }
 
-.email-login-container>div {
+.email-login-container > div {
   color: #fff;
 }
 
@@ -210,20 +212,27 @@ h1 {
 }
 
 .line-separation::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(to right, rgb(26, 23, 59) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgb(26, 23, 59) 84%);
+  background: linear-gradient(
+    to right,
+    rgb(26, 23, 59) 16%,
+    rgba(184, 40, 105, 1),
+    rgba(229, 9, 20, 1),
+    rgba(184, 40, 105, 1),
+    rgb(26, 23, 59) 84%
+  );
   margin: 0 auto;
   border-radius: inherit;
 }
 
 .heading,
-.reasons-container>:nth-child(1),
-.questions-container>:nth-child(1) {
+.reasons-container > :nth-child(1),
+.questions-container > :nth-child(1) {
   color: white;
   margin: 50px auto 20px;
   width: 80vw;
@@ -276,7 +285,7 @@ h1 {
   overflow-x: auto;
   overflow-y: hidden;
   scroll-behavior: smooth;
-   scrollbar-width: none;
+  scrollbar-width: none;
   position: relative;
 }
 
@@ -312,14 +321,15 @@ h1 {
   position: absolute;
   z-index: 1;
   color: black;
-  filter: drop-shadow(1px 1px white) drop-shadow(-1px 1px white) drop-shadow(1px -1px white) drop-shadow(-1px -1px white);
+  filter: drop-shadow(1px 1px white) drop-shadow(-1px 1px white)
+    drop-shadow(1px -1px white) drop-shadow(-1px -1px white);
   font-size: 100px;
   font-weight: 700;
   bottom: -10px;
   left: -20px;
 }
 
-.slider>:nth-child(1)>.number {
+.slider > :nth-child(1) > .number {
   left: 3px;
 }
 
@@ -327,7 +337,7 @@ h1 {
   margin-top: 60px;
 }
 
-.reasons-container>:nth-child(2) {
+.reasons-container > :nth-child(2) {
   display: flex;
   margin: 0 auto;
   width: 80vw;
@@ -345,7 +355,7 @@ h1 {
   padding: 20px;
 }
 
-.boxes>:nth-child(1) {
+.boxes > :nth-child(1) {
   font-size: 24px;
   font-weight: 500;
   color: #fff;
@@ -353,13 +363,13 @@ h1 {
   margin-bottom: 15px;
 }
 
-.boxes>:nth-child(2) {
+.boxes > :nth-child(2) {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
   letter-spacing: -0.5px;
 }
 
-.boxes>:nth-child(3) {
+.boxes > :nth-child(3) {
   position: absolute;
   bottom: 0;
   right: 15px;
@@ -371,7 +381,7 @@ h1 {
   margin: 0 auto;
 }
 
-.questions-container>:nth-child(2) {
+.questions-container > :nth-child(2) {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
@@ -403,10 +413,10 @@ h1 {
 }
 
 .ques-box:hover {
-  background-color: rgba(255, 255, 255, 0.25)
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
-.ques-box>:nth-child(1) {
+.ques-box > :nth-child(1) {
   font-size: 24px;
   font-weight: 400;
   color: #fff;
@@ -428,7 +438,7 @@ h1 {
 }
 
 .email-login-container-2 {
-  margin:  60px auto 0;
+  margin: 60px auto 0;
 }
 
 .email-container-2 {
@@ -447,13 +457,12 @@ footer {
   margin: 60px auto 150px;
 }
 
-footer>:nth-child(1) {
+footer > :nth-child(1) {
   font-weight: 400;
 }
 
 footer a {
   color: rgba(255, 255, 255, 0.7);
-
 }
 
 .table-grid {
@@ -467,7 +476,7 @@ footer a {
   list-style: none;
 }
 
-footer>:nth-last-child(2) {
+footer > :nth-last-child(2) {
   color: rgba(255, 255, 255, 0.5);
   font-size: 13px;
 }
@@ -478,12 +487,12 @@ footer>:nth-last-child(2) {
   cursor: pointer;
 }
 
-footer>:nth-last-child(3) {
+footer > :nth-last-child(3) {
   margin: 35px 0 30px;
   font-size: 14px;
 }
 
-footer>:nth-child(1) {
+footer > :nth-child(1) {
   margin-bottom: 40px;
 }
 
@@ -514,7 +523,7 @@ footer>:nth-child(1) {
     font-weight: 900;
   }
 
-  .reasons-container>:nth-child(2) {
+  .reasons-container > :nth-child(2) {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 15px;
@@ -525,22 +534,22 @@ footer>:nth-child(1) {
     height: 190px;
   }
 
-  .boxes>:nth-child(1) {
+  .boxes > :nth-child(1) {
     font-size: 20px;
     margin: 0;
   }
 
-  .boxes>:nth-child(2) {
+  .boxes > :nth-child(2) {
     font-size: 14px;
   }
 
   .heading,
-  .reasons-container>:nth-child(1),
-  .questions-container>:nth-child(1) {
+  .reasons-container > :nth-child(1),
+  .questions-container > :nth-child(1) {
     font-size: 22px;
   }
 
-  .ques-box>:nth-child(1),
+  .ques-box > :nth-child(1),
   .ans-box {
     font-size: 16px;
   }
@@ -549,30 +558,29 @@ footer>:nth-child(1) {
     width: 20px;
   }
 
-  .email-container button{
+  .email-container button {
     flex: 0.75;
   }
 
-  .email-login-container>:nth-child(1){
+  .email-login-container > :nth-child(1) {
     font-size: 20px;
   }
 
-  .email-login-container-2{
+  .email-login-container-2 {
     max-width: 750px;
   }
 
-  
   .text > span {
     margin-top: 20px;
   }
 
-  .email-container-2 button{
+  .email-container-2 button {
     align-self: start;
   }
 
   .table-grid {
     grid-template-columns: none;
-    grid-template-rows: 1fr
+    grid-template-rows: 1fr;
   }
 
   .images {
@@ -582,10 +590,6 @@ footer>:nth-child(1) {
 
   .number {
     font-size: 75px;
-  }
-
-  .logo {
-    width: 100px;
   }
 
   nav .select-container {
@@ -625,17 +629,17 @@ footer>:nth-child(1) {
 }
 
 @media (min-width: 931px) and (max-width: 1280px) {
-  .reasons-container>:nth-child(2) {
+  .reasons-container > :nth-child(2) {
     display: grid;
     grid-template-columns: 40vw 40vw;
     gap: 15px;
   }
 
-  .slider{
+  .slider {
     margin: 0 10px;
   }
 
-  h1{
+  h1 {
     font-size: 32px;
     letter-spacing: 0;
   }
@@ -644,22 +648,22 @@ footer>:nth-child(1) {
     width: 40vw;
     height: 200px;
   }
-  
-  .email-container-2 button{
+
+  .email-container-2 button {
     flex: 1;
   }
 
-  .table-grid{
+  .table-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 700px) and (max-width: 960px) {
-  .table-grid{
+  .table-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  h1{
+  h1 {
     font-size: 32px;
   }
 }
@@ -669,35 +673,35 @@ footer>:nth-child(1) {
     flex-direction: column;
   }
 
-  .email-login-container{
+  .email-login-container {
     max-width: 350px;
   }
 
-  .email-container{
+  .email-container {
     justify-content: center;
     align-items: center;
   }
 
-  h1{
+  h1 {
     font-size: 24px;
   }
 
-  .text> span{
+  .text > span {
     font-size: 14px;
   }
 
-  .email-container input{
+  .email-container input {
     width: 93%;
   }
-  .email-container-2 input{
+  .email-container-2 input {
     width: 90%;
   }
 
-  .email-container button{
+  .email-container button {
     max-width: 200px;
   }
 
-  .email-login-container>:nth-child(1){
+  .email-login-container > :nth-child(1) {
     font-size: 14px;
   }
 }
