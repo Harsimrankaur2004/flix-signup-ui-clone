@@ -635,6 +635,10 @@ footer > :nth-child(1) {
     gap: 15px;
   }
 
+   .logo {
+    font-size: 30px;
+  }
+
   .slider {
     margin: 0 10px;
   }
