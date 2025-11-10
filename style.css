@@ -273,8 +273,15 @@ h1 {
   margin: 0 auto;
   padding: 10px 0;
   border-radius: 10px;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+   scrollbar-width: none;
   position: relative;
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
 }
 
 .images {
@@ -554,10 +561,7 @@ footer>:nth-child(1) {
     max-width: 750px;
   }
 
-  .text .email-login-container>:nth-child(1){
-    margin-top: 20px;
-  }
-
+  
   .text > span {
     margin-top: 20px;
   }
