@@ -523,6 +523,10 @@ footer > :nth-child(1) {
     font-weight: 900;
   }
 
+  .logo {
+    font-size: 30px;
+  }
+
   .reasons-container > :nth-child(2) {
     display: grid;
     grid-template-columns: 1fr;
@@ -633,10 +637,6 @@ footer > :nth-child(1) {
     display: grid;
     grid-template-columns: 40vw 40vw;
     gap: 15px;
-  }
-
-   .logo {
-    font-size: 30px;
   }
 
   .slider {
