@@ -50,7 +50,7 @@ quesAns.forEach((qA) => {
           <img src="images/plus.svg" id="${qA.id}">
         </div>
       </div>
-      <div class="ans-box ans-box-${qA.id} hidden" id="${qA.id}">
+      <div class="ans-box hidden" id="${qA.id}">
         ${qA.ans}
       </div>
     </div>
@@ -69,8 +69,7 @@ document.querySelectorAll(".ques-box").forEach((e) => {
     document.querySelectorAll(".ans-box").forEach((ansBox) => {
       // If this answer box matches the clicked question
       if (
-        ansBox.id === quesId &&
-        ansBox.classList.contains(`ans-box-${quesId}`)
+        ansBox.id === quesId
       ) {
         // Toggle visibility (show if hidden, hide if shown)
         ansBox.classList.toggle("hidden");
@@ -79,9 +78,13 @@ document.querySelectorAll(".ques-box").forEach((e) => {
         ansBox.classList.add("hidden");
       }
     });
-    e.querySelectorAll("img").forEach((img) => {
+    
+    document.querySelectorAll(".ques-box img").forEach((img) => {
       if (quesId === img.id) {
         img.classList.toggle("img-rotate");
+      } 
+      if (quesId !== img.id) {
+        img.classList.remove("img-rotate");
       }
     });
   });
